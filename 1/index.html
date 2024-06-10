@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/slick/slick.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <title>Ana səhifə</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class=" border-gray-200 dark:bg-gray-900">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="assets/img/amal-1 1.png" class="pt-[15px] pb-15px" alt="Flowbite Logo" />
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+
+                <div class="resp hidden w-full md:block md:w-auto"  id="navbar-default">
+                    <div class="form flex justify-between p-5">
+                        <div class="input-box ">
+                            <input type="text" class=" form-control" placeholder="Axtar">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <a href="donation.html"><button type="button" class="text-white">İANƏ ET</button></a>
+                        <a href="voluntary.html"><button type="button" class="buttonNthOne text-white">KÖNÜLLÜ
+                                OL</button></a>
+                    </div>
+                    <div class="relative mt-3 md:hidden">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                            </svg>
+                        </div>
+                        <input type="text" id="search-navbar"
+                            class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Search...">
+                    </div>
+                    <ul class="font-medium justify-around flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="about.html"
+                                class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent ">Haqqımızda</a>
+                        </li>
+                        <li>
+                            <a href="project.html"
+                                class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Layihələrimiz</a>
+                        </li>
+                        <li>
+                            <a href="service.html"
+                                class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Xidmətlərimiz</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html"
+                                class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Galereya</a>
+                        </li>
+                        <li>
+                            <a href="report.html"
+                                class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Hesabat</a>
+                        </li>
+                        <li>
+                            <a href="contact.html"
+                                class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Əlaqə</a>
+                        </li>
+
+                        <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover"
+                            data-dropdown-trigger="hover"
+                            class="text-gray-500  font-medium rounded-lg text-sm text-center inline-flex items-center "
+                            type="button">AZ<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg>
+                        </button>
+
+                        <div id="dropdownHover"
+                            class="z-10 hidden bg-white divide-y divide-gray-900 rounded-lg shadow  ">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                aria-labelledby="dropdownHoverButton">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">AZ</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">RU</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">EN</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="slider container-fluid">
+            <div class="w-full m-0 flex items-center justify-center">
+                <div class="w-full">
+                    <div x-data="{ activeSlide: 1, slideCount: 3 }" class="overflow-hidden relative">
+                        <div class="banner">
+                            <h1>Lorem Ipsum is simply dummy text</h1>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humour, or randomised words which don't
+                                look even slightly believable. If you are going to use a passage of Lorem Ipsum, you
+                                need to be sure there isn't anything embarrassing hidden in the middle of text...</p>
+                            <a href=""><button>İANƏ ET</button></a>
+                        </div>
+                        <div class="whitespace-nowrap transition-transform duration-500 ease-in-out"
+                            :style="'transform: translateX(-' + (activeSlide - 1) * 100.5 + '%)'"
+                            x-init="setInterval(() => { activeSlide = activeSlide  slideCount ? activeSlide + 1 : 1 }, 5000)">
+                            <div class="inline-block w-full h-full">
+                                <img src="assets/img/larm-rmah-AEaTUnvneik-unsplash 1.png" alt="" width="100% " />
+                            </div>
+                            <div class="inline-block w-full ">
+                                <img src="assets/img/larm-rmah-AEaTUnvneik-unsplash 1.png" alt="" width="100% " />
+                            </div>
+                            <div class="inline-block w-full ">
+                                <img src="assets/img/larm-rmah-AEaTUnvneik-unsplash 1.png" alt="" width="100% " />
+                            </div>
+                        </div>
+
+
+                        <div class="absolute bottom-0 left-0 right-0 flex justify-center space-x-2 p-4">
+                            <template x-for="slideIndex in slideCount" :key="slideIndex">
+                                <button @click="activeSlide = slideIndex" class="h-2 w-2 rounded-full"
+                                    :class="{'bg-orange-500': activeSlide === slideIndex, 'bg-white/50': activeSlide !== slideIndex}"></button>
+                            </template>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="aboutCard">
+            <div class="card max-w-screen-xl flex justify-between mx-auto">
+                <div class="flex justify-between items-center max-w-sm p-5 bg-white border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700"
+                    style="background-image: url(assets/img/imgg-3\ 1.png);  width: 390px; height: 210px; background-color: rgb(4, 31, 67);">
+                    <img src="assets/img/Vector.png" style="width: 100px; height: 100px;" alt="">
+                    <div class="package">
+                        <h4>
+                            Gündəlik təlabat
+                        </h4>
+                        <p>Lorem Ipsum is simply dummy
+                            text of the printing.</p>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center max-w-sm p-5 bg-white border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700"
+                    style="background-image: url(assets/img/imgg-4\ 1.png);  width: 390px; height: 210px; background-color: rgb(132, 233, 162);">
+                    <img src="assets/img//Vector (1).png" style="width: 100px; height: 100px;" alt="">
+                    <div class="package">
+                        <h4>
+                            Tibbi yardım
+                        </h4>
+                        <p>Lorem Ipsum is simply dummy
+                            text of the printing.</p>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center max-w-sm p-5 bg-white border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700"
+                    style="background-image: url(assets/img/imgg-3\ 1.png);  width: 390px; height: 210px; background-color: rgb(255, 141, 2);">
+                    <img src="assets/img/Vector (2).png" style="width: 120px; height: 90px;" alt="">
+                    <div class="package">
+                        <h4>
+                            Təhsil
+                        </h4>
+                        <p>Lorem Ipsum is simply dummy
+                            text of the printing.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="aboutStart max-w-screen-xl mx-auto mt-[90px] flex justify-between">
+                <div class="relative">
+                    <img src="assets/img/joel-muniz-A4Ax1ApccfA-unsplash 1.png" width="541" height="640" alt="">
+                    <div class="aboutImage absolute">
+                        <img src="assets/img/katt-yukawa-K0E6E0a0R3A-unsplash 1.png" alt="">
+                    </div>
+                </div>
+                <div class="aboutTitle">
+                    <h1>ABOUT</h1>
+                    <h2>Lorem Ipsum is simply dummy text</h2>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                        anything embarrassing hidden in the middle of text...</p>
+                    <div class="flex justify-center">
+                        <a class="" href=""><button>Ətraflı bax <i class="fa-solid fa-arrow-right"></i></button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="player">
+            <div class="playerStart max-w-screen mx-auto flex justify-center justify-between items-center mt-[100px]"
+                style="background-image: url(assets/img/planting-trees-coin-pile-with-sunlight\ 1.png); width: 100%; height: 620px; background-repeat: no-repeat; background-position: center; background-size: cover;">
+                <div class="relative playerVideo">
+                    <a id="play-video" class="video-play-button" href="#">
+                        <span></span>
+                    </a>
+
+                    <div id="video-overlay" class="video-overlay">
+                        <a class="video-overlay-close">&times;</a>
+                    </div>
+                </div>
+                <div class="playerTitle flex flex-col justify-center">
+                    <h3>Lorem Ipsum is simply
+                        dummy text</h3>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable...</p>
+                    <div class="range flex justify-between mt-[100px]">
+                        <div class="flex flex-col items-center">
+                            <h1>100+</h1>
+                            <h4>ailə</h4>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h1>50M</h1>
+                            <h4>toplanan məbləğ</h4>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h1>80+</h1>
+                            <h4>tələbə</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cardSlide">
+            <div class="max-w-screen-xl mx-auto mt-[80px] h-[100vh]">
+                <div class="w-full relative">
+
+                    <div class="slide-container swiper">
+                        <div class="slide-content">
+                            <div class="card-wrapper swiper-wrapper">
+                                <div
+                                    class="card swiper-slide max-w-sm w-[370px] bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
+                                    <div class="flex flex-col justify-center items-center">
+                                        <a href="#">
+                                            <img class="" src="assets/img/young-man-supporting-needy-individuals 1.png"
+                                                alt="" />
+                                        </a>
+                                        <div class="p-5">
+                                            <a href="#">
+                                                <h5
+                                                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                                    Lorem Ipsum is simply dummy text</h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="cardInfo">
+                                        <div class="flex justify-center">
+                                            <div class="progress">
+                                                <div class="progressBar">
+
+                                                </div>
+                                                <div class="progressRange flex justify-center items-center "
+                                                    style="color: aliceblue;">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="worth flex justify-around mt-[50px]">
+                                            <div>
+                                                <p>Toplanan: <span class="predictValue">7.000₼</span></p>
+                                            </div>
+                                            <div>
+                                                <p>Məqsəd: <span class="maxValue">10.000₼</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="donation">
+                                        <button class="w-[322px] h-[60px]">İANE ET</button>
+                                    </div>
+                                </div>
+                                <div
+                                    class="card swiper-slide max-w-sm w-[370px] bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
+                                    <div class="flex flex-col justify-center items-center">
+                                        <a href="#">
+                                            <img class="" src="assets/img/young-man-supporting-needy-individuals 1.png"
+                                                alt="" />
+                                        </a>
+                                        <div class="p-5">
+                                            <a href="#">
+                                                <h5
+                                                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                                    Lorem Ipsum is simply dummy text</h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="cardInfo">
+                                        <div class="flex justify-center">
+                                            <div class="progress">
+                                                <div class="progressBar">
+
+                                                </div>
+                                                <div class="progressRange flex justify-center items-center "
+                                                    style="color: aliceblue;">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="worth flex justify-around mt-[50px]">
+                                            <div>
+                                                <p>Toplanan: <span class="predictValue">7.000₼</span></p>
+                                            </div>
+                                            <div>
+                                                <p>Məqsəd: <span class="maxValue">10.000₼</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="donation">
+                                        <button class="w-[322px] h-[60px]">İANE ET</button>
+                                    </div>
+                                </div>
+                                <div
+                                    class="card swiper-slide max-w-sm w-[370px] bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
+                                    <div class="flex flex-col justify-center items-center">
+                                        <a href="#">
+                                            <img class="" src="assets/img/young-man-supporting-needy-individuals 1.png"
+                                                alt="" />
+                                        </a>
+                                        <div class="p-5">
+                                            <a href="#">
+                                                <h5
+                                                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                                    Lorem Ipsum is simply dummy text</h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="cardInfo">
+                                        <div class="flex justify-center">
+                                            <div class="progress">
+                                                <div class="progressBar">
+
+                                                </div>
+                                                <div class="progressRange flex justify-center items-center "
+                                                    style="color: aliceblue;">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="worth flex justify-around mt-[50px]">
+                                            <div>
+                                                <p>Toplanan: <span class="predictValue">7.000₼</span></p>
+                                            </div>
+                                            <div>
+                                                <p>Məqsəd: <span class="maxValue">10.000₼</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="donation">
+                                        <button class="w-[322px] h-[60px]">İANE ET</button>
+                                    </div>
+                                </div>
+                                <div
+                                    class="card swiper-slide max-w-sm w-[370px] bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
+                                    <div class="flex flex-col justify-center items-center">
+                                        <a href="#">
+                                            <img class="" src="assets/img/young-man-supporting-needy-individuals 1.png"
+                                                alt="" />
+                                        </a>
+                                        <div class="p-5">
+                                            <a href="#">
+                                                <h5
+                                                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                                    Lorem Ipsum is simply dummy text</h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="cardInfo">
+                                        <div class="flex justify-center">
+                                            <div class="progress">
+                                                <div class="progressBar">
+
+                                                </div>
+                                                <div class="progressRange flex justify-center items-center "
+                                                    style="color: aliceblue;">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="worth flex justify-around mt-[50px]">
+                                            <div>
+                                                <p>Toplanan: <span class="predictValue">7.000₼</span></p>
+                                            </div>
+                                            <div>
+                                                <p>Məqsəd: <span class="maxValue">10.000₼</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="donation">
+                                        <button class="w-[322px] h-[60px]">İANE ET</button>
+                                    </div>
+                                </div>
+                                <div
+                                    class="card swiper-slide max-w-sm w-[370px] bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
+                                    <div class="flex flex-col justify-center items-center">
+                                        <a href="#">
+                                            <img class="" src="assets/img/young-man-supporting-needy-individuals 1.png"
+                                                alt="" />
+                                        </a>
+                                        <div class="p-5">
+                                            <a href="#">
+                                                <h5
+                                                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                                    Lorem Ipsum is simply dummy text</h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="cardInfo">
+                                        <div class="flex justify-center">
+                                            <div class="progress">
+                                                <div class="progressBar">
+
+                                                </div>
+                                                <div class="progressRange flex justify-center items-center "
+                                                    style="color: aliceblue;">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="worth flex justify-around mt-[50px]">
+                                            <div>
+                                                <p>Toplanan: <span class="predictValue">7.000₼</span></p>
+                                            </div>
+                                            <div>
+                                                <p>Məqsəd: <span class="maxValue">10.000₼</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="donation">
+                                        <button class="w-[322px] h-[60px]">İANE ET</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slideButton flex justify-end m-7">
+                            <button class="swiper-button-prevv mr-7" data-carousel-prev><i
+                                    style="transform: rotate(3.142rad);" class="fa-solid fa-arrow-right"></i></button>
+                            <button class="swiper-button-nextt" id="slider-button-right" data-carousel-next><i
+                                    class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="cardSlideTwo">
+            <div class="max-w-screen-xl mx-auto responsive mt-[80px] flex justify-center items-center"
+                style="margin-bottom: 200px;">
+                <div>
+                    <div class="card max-w-sm bg-white border border-gray-200 shadow">
+                        <a href="#" class="flex justify-center">
+                            <img class="w-[370px] h-[280px]" src="assets/img/photorealistic-money-with-plant 1.png"
+                                alt="" />
+                        </a>
+                        <div class="p-5 w-[370px] h-[226px]">
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><i
+                                    class="fa-solid fa-calendar-days"></i> 03 February, 2023</p>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                Lorem Ipsum is simply dummy text</h5>
+                            <div class="hr"></div>
+                            <div class="flex">
+                                <button class="flex justify-between items-center">Ətraflı oxu <i
+                                        class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card max-w-sm bg-white border border-gray-200 shadow">
+                        <a href="#" class="flex justify-center">
+                            <img class="w-[370px] h-[280px]" src="assets/img/katt-yukawa-K0E6E0a0R3A-unsplash 1.png"
+                                alt="" />
+                        </a>
+                        <div class="p-5 w-[370px] h-[226px]">
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><i
+                                    class="fa-solid fa-calendar-days"></i> 03 February, 2023</p>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                Lorem Ipsum is simply dummy text</h5>
+                            <div class="hr"></div>
+                            <div class="flex">
+                                <button class="flex justify-between items-center">Ətraflı oxu <i
+                                        class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card max-w-sm bg-white border border-gray-200 shadow">
+                        <a href="#" class="flex justify-center">
+                            <img class="w-[370px] h-[280px]"
+                                src="assets/img/masjid-pogung-dalangan-cMyEvxr7Uzg-unsplash 2.png" alt="" />
+                        </a>
+                        <div class="p-5 w-[370px] h-[226px]">
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><i
+                                    class="fa-solid fa-calendar-days"></i> 03 February, 2023</p>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                Lorem Ipsum is simply dummy text</h5>
+                            <div class="hr"></div>
+                            <div class="flex">
+                                <button class="flex justify-between items-center">Ətraflı oxu <i
+                                        class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card max-w-sm bg-white border border-gray-200 shadow">
+                        <a href="#" class="flex justify-center">
+                            <img class="w-[370px] h-[280px]" src="assets/img/photorealistic-money-with-plant 1.png"
+                                alt="" />
+                        </a>
+                        <div class="p-5 w-[370px] h-[226px]">
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><i
+                                    class="fa-solid fa-calendar-days"></i> 03 February, 2023</p>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                Lorem Ipsum is simply dummy text</h5>
+                            <div class="hr"></div>
+                            <div class="flex">
+                                <button class="flex justify-between items-center">Ətraflı oxu <i
+                                        class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card max-w-sm bg-white border border-gray-200 shadow">
+                        <a href="#" class="flex justify-center">
+                            <img class="w-[370px] h-[280px]" src="assets/img/katt-yukawa-K0E6E0a0R3A-unsplash 1.png"
+                                alt="" />
+                        </a>
+                        <div class="p-5 w-[370px] h-[226px]">
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><i
+                                    class="fa-solid fa-calendar-days"></i> 03 February, 2023</p>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                Lorem Ipsum is simply dummy text</h5>
+                            <div class="hr"></div>
+                            <div class="flex">
+                                <button class="flex justify-between items-center">Ətraflı oxu <i
+                                        class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card max-w-sm bg-white border border-gray-200 shadow">
+                        <a href="#" class="flex justify-center">
+                            <img class="w-[370px] h-[280px]"
+                                src="assets/img/masjid-pogung-dalangan-cMyEvxr7Uzg-unsplash 2.png" alt="" />
+                        </a>
+                        <div class="p-5 w-[370px] h-[226px]">
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><i
+                                    class="fa-solid fa-calendar-days"></i> 03 February, 2023</p>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                Lorem Ipsum is simply dummy text</h5>
+                            <div class="hr"></div>
+                            <div class="flex">
+                                <button class="flex justify-between items-center">Ətraflı oxu <i
+                                        class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card max-w-sm bg-white border border-gray-200 shadow">
+                        <a href="#" class="flex justify-center">
+                            <img class="w-[370px] h-[280px]" src="assets/img/photorealistic-money-with-plant 1.png"
+                                alt="" />
+                        </a>
+                        <div class="p-5 w-[370px] h-[226px]">
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><i
+                                    class="fa-solid fa-calendar-days"></i> 03 February, 2023</p>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                Lorem Ipsum is simply dummy text</h5>
+                            <div class="hr"></div>
+                            <div class="flex">
+                                <button class="flex justify-between items-center">Ətraflı oxu <i
+                                        class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card max-w-sm bg-white border border-gray-200 shadow">
+                        <a href="#" class="flex justify-center">
+                            <img class="w-[370px] h-[280px]" src="assets/img/katt-yukawa-K0E6E0a0R3A-unsplash 1.png"
+                                alt="" />
+                        </a>
+                        <div class="p-5 w-[370px] h-[226px]">
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><i
+                                    class="fa-solid fa-calendar-days"></i> 03 February, 2023</p>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                Lorem Ipsum is simply dummy text</h5>
+                            <div class="hr"></div>
+                            <div class="flex">
+                                <button class="flex justify-between items-center">Ətraflı oxu <i
+                                        class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card max-w-sm bg-white border border-gray-200 shadow">
+                        <a href="#" class="flex justify-center">
+                            <img class="w-[370px] h-[280px]"
+                                src="assets/img/masjid-pogung-dalangan-cMyEvxr7Uzg-unsplash 2.png" alt="" />
+                        </a>
+                        <div class="p-5 w-[370px] h-[226px]">
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><i
+                                    class="fa-solid fa-calendar-days"></i> 03 February, 2023</p>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                Lorem Ipsum is simply dummy text</h5>
+                            <div class="hr"></div>
+                            <div class="flex">
+                                <button class="flex justify-between items-center">Ətraflı oxu <i
+                                        class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="advertising"
+            style="background-image: url(assets/img/imgg-5\ 1.png); background-repeat: no-repeat; background-position:left;">
+            <div class="max-w-screen-xl mx-auto p-[70px]">
+                <div class="advertisingImage flex justify-around ">
+                    <img src="assets/img/char-3o 1.png" alt="">
+                    <img src="assets/img/char-4b 1.png" alt="">
+                    <img src="assets/img/charity-llogo-47 1.png" alt="">
+                    <img src="assets/img/char02 1.png" alt="">
+                    <img src="assets/img/char-4 1.png" alt="">
+                </div>
+
+            </div>
+            <div class=" p-[40px]" style="background-color: #F4F5FA;">
+                <div class="subscribe max-w-screen-xl mx-auto flex justify-between">
+                    <h1>Yeniliklərdən xəbərdar olmaq üçün
+                        Abonə OL</h1>
+                    <div class="subscribeSubmit flex">
+                        <input type="text" placeholder="E-mail adresinizi daxil edin"
+                            class="block w-[373px] h-[60px] p-4 text-gray-400 border border-gray-300  text-base focus:ring-gray-400 focus:border-gray-100 ">
+                        <a href=""><button class="w-[230px] h-[60px]">ABUNƏ OL</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pt-10" style="background-color: #252525;">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 ">
+            <div class="logo flex justify-between">
+                <div class="mb-6 md:mb-0">
+                    <a href="index.html" class="flex items-center">
+                        <img src="assets/img/amal-01 1.png" class="pt-[15px] pb-15px" alt="Flowbite Logo" />
+                    </a>
+                    <div class="mt-7">
+                        <a href="donation.html">
+                            <button>İANƏ ET</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-between">
+                    <ul>
+                        <li>
+                            <a href="about.html">Haqqımızda</a>
+                        </li>
+                        <li>
+                            <a href="project.html">Layihələrimiz</a>
+                        </li>
+                        <li>
+                            <a href="service.html">Xidmətlərimiz</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">Galereya</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Əlaqə</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex justify-between">
+                    <ul>
+                        <li>
+                            <a href="report.html">Hesabat</a>
+                        </li>
+                        <li>
+                            <a href="">Necə işləyirik?</a>
+                        </li>
+                        <li>
+                            <a href="">Mediada biz</a>
+                        </li>
+                        <li>
+                            <a href="">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa-solid fa-location-dot"></i> Bakı şəh., Nərimanov ray., 18A</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-phone"></i> +994 50 345 76 67</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-envelope"></i> info@amal.az</a>
+                        </li>
+                    </ul>
+                    <div class="social flex mt-4">
+                        <a href="">
+                            <div class="flex justify-center items-center">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="flex justify-center items-center">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="background-color: #D9D9D9;" class="flex justify-center items-center">
+                                <i style="color: #7BC18F;" class="fa-brands fa-twitter"></i>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="flex justify-center items-center">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="flex justify-center items-center">
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-500 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <div style="text-align: center;" class="sm:flex sm:items-center sm:justify-center">
+                <span class="text-sm text-gray-400 sm:text-center dark:text-gray-400">© 2023 <a
+                        href="https://flowbite.com/" class="hover:underline">Bütün hüquqlar qorunur.</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

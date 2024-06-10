@@ -1,0 +1,404 @@
+@media screen and (max-width: 1200px) {
+    .gallery .image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projectTitle .title h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: 4px;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .projectTitle .title p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 32px;
+        letter-spacing: 2px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .projectCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projectCard .image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .finalTitle p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 32px;
+        letter-spacing: 2px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .projectCard .title h2 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        letter-spacing: 2px;
+        margin-top: 40px;
+        text-align: center;
+    }
+    
+    .projectCard .title p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        line-height: 32px;
+        font-size: 15px;
+        letter-spacing: 2px;
+        margin-top: 40px;
+        width: 350px;
+    }
+    .projectCard .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hidden .form input{
+        width: 250px;
+    } 
+    .hidden .form button{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .banner {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .playerVideo {
+        display: none;
+    }
+
+    .playerStart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .playerTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        text-align: center;
+        width: 500px;
+    }
+
+    .playerTitle h3 {
+        font-size: 20px;
+        width: 300px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .range div h1 {
+        font-size: 40px;
+    }
+
+    .range div h4 {
+        font-size: 20px;
+    }
+
+    .playerTitle p {
+        font-size: 10px;
+        width: 200px;
+    }
+
+    .banner h1 {
+        font-size: 12px;
+        align-items: normal;
+        bottom: 0;
+    }
+
+    .banner p {
+        font-size: 7px;
+        margin: 0;
+    }
+
+    .banner button {
+        width: 100px;
+        height: 29px;
+        margin: 0;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutImage {
+        display: none;
+    }
+
+    .aboutStart {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutTitle {
+        text-align: center;
+    }
+
+    .aboutTitle h2 {
+        font-size: 15px;
+    }
+
+    .aboutTitle p {
+        width: 300px;
+        font-size: 15px;
+    }
+
+    .explanation .aboutOne {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .explanation .aboutTwo {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .explanation .aboutTwo .aboutTitle p {
+        text-align: center !important;
+    }
+
+    .teamTitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .teamTitle h3 {
+        text-align: center;
+    }
+
+    .teamCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .advertising .advertisingImage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subscribe h1 {
+        text-align: center;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .list button {
+        width: 180px;
+    }
+
+    .list thead tr {
+        font-size: 10px;
+    }
+
+    .list tbody td {
+        font-size: 10px;
+    }
+    .project .card .social div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .resp .form input{
+        width: 100px;
+    } 
+    .resp .form button{
+        width: 150px;
+    }
+}
+@media screen and (max-width: 760px){
+    .resp .form input{
+        display: none;
+    }
+    .resp .form i{
+        display: none;
+    } 
+    .resp .form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .banner h1 {
+        font-size: 10px;
+        align-items: normal;
+        bottom: 0;
+    }
+
+    .subscribe h1 {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .banner p {
+        font-size: 5px;
+        margin: 0;
+    }
+
+    .banner button {
+        width: 100px;
+        height: 29px;
+        margin: 20px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .hidden .form input{
+        width: 200px !important;
+    } 
+    .hidden .form button{
+        width: 150px !important;
+    }
+    .subscribeSubmit {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .subscribeSubmit input {
+        width: 320px;
+    }
+
+    .subscribeSubmit button {
+        margin-top: 10px;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact .mail {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .voluntary .id input {
+        width: 330px;
+    }
+
+    .voluntary .id {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .voluntary .choose {
+        width: 340px;
+    }
+
+    .voluntary textarea {
+        width: 330px;
+    }
+
+    .voluntary .area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .voluntary .submit button {
+        width: 330px;
+    }
+
+    .voluntary .submit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .donation .inp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .donation .inp input {
+        width: 300px;
+    }
+
+    .donation .area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .donation .submit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

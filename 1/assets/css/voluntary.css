@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bannerVoluntary h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    color: white;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 3px;
+    text-align: center;
+
+}
+
+.bannerVoluntary a {
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+
+}
+
+.bannerVoluntary i {
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.bannerVoluntary .title {
+    margin: auto;
+    padding: 20px;
+}
+
+.voluntary .id input{
+    width: 560px;
+    height: 60px;
+    border: 1px solid #C0C0C0;
+    padding-left: 30px;
+}
+.voluntary h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #C0C0C0;
+    padding-top: 15px;
+    padding-left: 40px;
+}
+
+.voluntary textarea{
+    width: 560px;
+    height: 200px;
+    border: 1px solid #C0C0C0 ;
+    padding: 20px;
+    margin-top: 30px;
+}
+.voluntary .submit button{
+    width: 560px;
+    height: 60px;
+    background-color: #0E3654;
+    color: white;
+    margin-top: 20px;
+}
