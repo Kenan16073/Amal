@@ -1,4 +1,5 @@
 "use strict"
+AOS.init();
 $('#play-video').on('click', function (e) {
   e.preventDefault();
   $('#video-overlay').addClass('open');
@@ -39,17 +40,19 @@ let swiper = new Swiper(".slide-content", {
     0: {
       slidesPerView: 1,
     },
-    520: {
+    950: {
       slidesPerView: 2,
     },
-    950: {
+    1000: {
       slidesPerView: 3,
     },
   },
 });
+
 $('.responsive').slick({
   dots: true,
   infinite: false,
+  arrows: false,
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 3,
@@ -64,7 +67,7 @@ $('.responsive').slick({
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 950,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2
@@ -79,6 +82,76 @@ $('.responsive').slick({
     }
   ]
 });
+
+$('.autoplay').slick({
+  arrows: false,
+  speed: 300,
+  slidesToShow: 5,
+  slidesToScroll: 3,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: false,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 950,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+
+$('.autoplayTwo').slick({
+  dots: false,
+  arrows: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 3,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: false,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 950,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+
 
 
 function range() {
@@ -108,4 +181,45 @@ function range() {
 
 range()
 
+document.addEventListener("DOMContentLoaded", () => {
+  function counter(id, start, end, duration) {
+    let obj = document.getElementById(id),
+      current = start,
+      range = end - start,
+      increment = end > start ? 1 : -1,
+      step = Math.abs(Math.floor(duration / range)),
+      timer = setInterval(() => {
+        current += increment;
+        obj.textContent = current;
+        if (current == end) {
+          clearInterval(timer);
+        }
+      }, step);
+  }
+  counter("count1", 0, 100, 3000);
+  counter("count2", 100, 50, 2500);
+  counter("count3", 0, 80, 3000);
+});
 
+
+
+// // Get the modal
+// let modal = document.getElementById("myModal");
+
+// // Get the image and insert it inside the modal - use its "alt" text as a caption
+// let img = document.getElementById("myImg");
+// let modalImg = document.getElementById("img01");
+// let captionText = document.getElementById("caption");
+// img.onclick = function () {
+//   modal.style.display = "block";
+//   modalImg.src = this.src;
+//   captionText.innerHTML = this.alt;
+// }
+
+// // Get the <span> element that closes the modal
+// let span = document.getElementsByClassName("close")[0];
+
+// // When the user clicks on <span> (x), close the modal
+// span.onclick = function () {
+//   modal.style.display = "none";
+// }

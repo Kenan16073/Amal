@@ -10,6 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/slick/slick-theme.css">
     <link rel="stylesheet" href="assets/slick/slick.css">
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -21,10 +22,12 @@
 <body>
 
     <header>
-        <nav class=" border-gray-200 dark:bg-gray-900">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="assets/img/amal-1 1.png" class="pt-[15px] pb-15px" alt="Flowbite Logo" />
+        <nav class="border-gray-200 dark:bg-gray-900 p-4">
+            <div class="head max-w-screen-xl  flex flex-wrap items-center justify-between mx-auto ">
+                <a data-aos-duration="1300" data-aos="fade-right" href="index.html"
+                    class="flex items-center rtl:space-x-reverse">
+                    <img src="assets/img/amal-1 1.png" class="pt-[15px] pb-15px w-[264px] h-[120px]"
+                        alt="Flowbite Logo" />
                 </a>
                 <button data-collapse-toggle="navbar-default" type="button"
                     class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -36,30 +39,21 @@
                             d="M1 1h15M1 7h15M1 13h15" />
                     </svg>
                 </button>
+                <div data-aos-duration="1300" data-aos="fade-left" class="hidden md:block form flex justify-around p-5">
+                    <a href="donation.html"><button type="button" class="text-white">İANƏ ET</button></a>
+                    <a href="voluntary.html"><button type="button" class="buttonNthOne text-white">KÖNÜLLÜ
+                            OL</button></a>
+                </div>
 
-                <div class="resp hidden w-full md:block md:w-auto"  id="navbar-default">
-                    <div class="form flex justify-between p-5">
-                        <div class="input-box ">
-                            <input type="text" class=" form-control" placeholder="Axtar">
-                            <i class="fa fa-search"></i>
-                        </div>
+                <div data-aos-duration="1300" data-aos="fade-left" class="resp hidden w-full md:block "
+                    id="navbar-default ">
+                    <div class="hidden form flex justify-around p-5">
                         <a href="donation.html"><button type="button" class="text-white">İANƏ ET</button></a>
-                        <a href="voluntary.html"><button type="button" class="buttonNthOne text-white">KÖNÜLLÜ
+                        <a href="voluntary.html"><button type="button" class="buttonNthOne text-white mt-3">KÖNÜLLÜ
                                 OL</button></a>
                     </div>
-                    <div class="relative mt-3 md:hidden">
-                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                            </svg>
-                        </div>
-                        <input type="text" id="search-navbar"
-                            class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="Search...">
-                    </div>
-                    <ul class="font-medium justify-around flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <ul
+                        class="font-medium justify-around flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                         <li>
                             <a href="about.html"
                                 class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent ">Haqqımızda</a>
@@ -126,12 +120,13 @@
                 <div class="w-full">
                     <div x-data="{ activeSlide: 1, slideCount: 3 }" class="overflow-hidden relative">
                         <div class="banner">
-                            <h1>Lorem Ipsum is simply dummy text</h1>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            <h1 data-aos-duration="1300" data-aos="fade-left">Lorem Ipsum is simply dummy text</h1>
+                            <p data-aos-duration="1300" data-aos="fade-right">There are many variations of passages of
+                                Lorem Ipsum available, but the majority have
                                 suffered alteration in some form, by injected humour, or randomised words which don't
                                 look even slightly believable. If you are going to use a passage of Lorem Ipsum, you
                                 need to be sure there isn't anything embarrassing hidden in the middle of text...</p>
-                            <a href=""><button>İANƏ ET</button></a>
+                            <a data-aos-duration="1300" data-aos="fade-up" href=""><button>İANƏ ET</button></a>
                         </div>
                         <div class="whitespace-nowrap transition-transform duration-500 ease-in-out"
                             :style="'transform: translateX(-' + (activeSlide - 1) * 100.5 + '%)'"
@@ -163,7 +158,8 @@
 
         <section class="aboutCard">
             <div class="card max-w-screen-xl flex justify-between mx-auto">
-                <div class="flex justify-between items-center max-w-sm p-5 bg-white border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700"
+                <div data-aos-duration="1300" data-aos="fade-right"
+                    class=" flex justify-between items-center max-w-sm p-5 bg-white border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700"
                     style="background-image: url(assets/img/imgg-3\ 1.png);  width: 390px; height: 210px; background-color: rgb(4, 31, 67);">
                     <img src="assets/img/Vector.png" style="width: 100px; height: 100px;" alt="">
                     <div class="package">
@@ -174,7 +170,8 @@
                             text of the printing.</p>
                     </div>
                 </div>
-                <div class="flex justify-between items-center max-w-sm p-5 bg-white border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700"
+                <div data-aos-duration="1300" data-aos="fade-up"
+                    class="flex justify-between items-center max-w-sm p-5 bg-white border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700"
                     style="background-image: url(assets/img/imgg-4\ 1.png);  width: 390px; height: 210px; background-color: rgb(132, 233, 162);">
                     <img src="assets/img//Vector (1).png" style="width: 100px; height: 100px;" alt="">
                     <div class="package">
@@ -185,7 +182,8 @@
                             text of the printing.</p>
                     </div>
                 </div>
-                <div class="flex justify-between items-center max-w-sm p-5 bg-white border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700"
+                <div data-aos-duration="1300" data-aos="fade-left"
+                    class="flex justify-between items-center max-w-sm p-5 bg-white border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700"
                     style="background-image: url(assets/img/imgg-3\ 1.png);  width: 390px; height: 210px; background-color: rgb(255, 141, 2);">
                     <img src="assets/img/Vector (2).png" style="width: 120px; height: 90px;" alt="">
                     <div class="package">
@@ -201,13 +199,13 @@
 
         <section class="about">
             <div class="aboutStart max-w-screen-xl mx-auto mt-[90px] flex justify-between">
-                <div class="relative">
+                <div data-aos-duration="1300" data-aos="fade-right" class="relative">
                     <img src="assets/img/joel-muniz-A4Ax1ApccfA-unsplash 1.png" width="541" height="640" alt="">
                     <div class="aboutImage absolute">
                         <img src="assets/img/katt-yukawa-K0E6E0a0R3A-unsplash 1.png" alt="">
                     </div>
                 </div>
-                <div class="aboutTitle">
+                <div data-aos-duration="1300" data-aos="fade-left" class="aboutTitle">
                     <h1>ABOUT</h1>
                     <h2>Lorem Ipsum is simply dummy text</h2>
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
@@ -222,9 +220,9 @@
         </section>
 
         <section class="player">
-            <div class="playerStart max-w-screen mx-auto flex justify-center justify-between items-center mt-[100px]"
+            <div class=" playerStart max-w-screen mx-auto flex justify-center justify-between items-center mt-[100px]"
                 style="background-image: url(assets/img/planting-trees-coin-pile-with-sunlight\ 1.png); width: 100%; height: 620px; background-repeat: no-repeat; background-position: center; background-size: cover;">
-                <div class="relative playerVideo">
+                <div data-aos="fade-right" data-aos-duration="1300" class="relative playerVideo">
                     <a id="play-video" class="video-play-button" href="#">
                         <span></span>
                     </a>
@@ -233,7 +231,7 @@
                         <a class="video-overlay-close">&times;</a>
                     </div>
                 </div>
-                <div class="playerTitle flex flex-col justify-center">
+                <div data-aos="fade-left" data-aos-duration="1300" class="playerTitle flex flex-col justify-center">
                     <h3>Lorem Ipsum is simply
                         dummy text</h3>
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
@@ -241,15 +239,24 @@
                         believable...</p>
                     <div class="range flex justify-between mt-[100px]">
                         <div class="flex flex-col items-center">
-                            <h1>100+</h1>
+                            <div class="flex">
+                                <h1 id="count1">100+</h1>
+                                <span>+</span>
+                            </div>
                             <h4>ailə</h4>
                         </div>
                         <div class="flex flex-col items-center">
-                            <h1>50M</h1>
+                            <div class="flex">
+                                <h1 id="count2">50</h1>
+                                <span>M</span>
+                            </div>
                             <h4>toplanan məbləğ</h4>
                         </div>
                         <div class="flex flex-col items-center">
-                            <h1>80+</h1>
+                            <div class="flex">
+                                <h1 id="count3">80+</h1>
+                                <span>+</span>
+                            </div>
                             <h4>tələbə</h4>
                         </div>
                     </div>
@@ -260,11 +267,10 @@
         <section class="cardSlide">
             <div class="max-w-screen-xl mx-auto mt-[80px] h-[100vh]">
                 <div class="w-full relative">
-
                     <div class="slide-container swiper">
                         <div class="slide-content">
                             <div class="card-wrapper swiper-wrapper">
-                                <div
+                                <div data-aos-duration="1300" data-aos="fade-right"
                                     class="card swiper-slide max-w-sm w-[370px] bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
                                     <div class="flex flex-col justify-center items-center">
                                         <a href="#">
@@ -293,10 +299,92 @@
 
                                         <div class="worth flex justify-around mt-[50px]">
                                             <div>
-                                                <p>Toplanan: <span class="predictValue">7.000₼</span></p>
+                                                <p>Toplanan: <span class="predictValue">700₼</span></p>
                                             </div>
                                             <div>
-                                                <p>Məqsəd: <span class="maxValue">10.000₼</span></p>
+                                                <p>Məqsəd: <span class="maxValue">10000₼</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="donation">
+                                        <button class="w-[322px] h-[60px]">İANE ET</button>
+                                    </div>
+                                </div>
+                                <div data-aos-duration="1300" data-aos="fade-up"
+                                    class="card swiper-slide max-w-sm w-[370px] bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
+                                    <div class="flex flex-col justify-center items-center">
+                                        <a href="#">
+                                            <img class="" src="assets/img/young-man-supporting-needy-individuals 1.png"
+                                                alt="" />
+                                        </a>
+                                        <div class="p-5">
+                                            <a href="#">
+                                                <h5
+                                                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                                    Lorem Ipsum is simply dummy text</h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="cardInfo">
+                                        <div class="flex justify-center">
+                                            <div class="progress">
+                                                <div class="progressBar">
+
+                                                </div>
+                                                <div class="progressRange flex justify-center items-center "
+                                                    style="color: aliceblue;">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="worth flex justify-around mt-[50px]">
+                                            <div>
+                                                <p>Toplanan: <span class="predictValue">790₼</span></p>
+                                            </div>
+                                            <div>
+                                                <p>Məqsəd: <span class="maxValue">10000₼</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="donation">
+                                        <button class="w-[322px] h-[60px]">İANE ET</button>
+                                    </div>
+                                </div>
+                                <div data-aos-duration="1300" data-aos="fade-left"
+                                    class="card swiper-slide max-w-sm w-[370px] bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
+                                    <div class="flex flex-col justify-center items-center">
+                                        <a href="#">
+                                            <img class="" src="assets/img/young-man-supporting-needy-individuals 1.png"
+                                                alt="" />
+                                        </a>
+                                        <div class="p-5">
+                                            <a href="#">
+                                                <h5
+                                                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                                    Lorem Ipsum is simply dummy text</h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="cardInfo">
+                                        <div class="flex justify-center">
+                                            <div class="progress">
+                                                <div class="progressBar">
+
+                                                </div>
+                                                <div class="progressRange flex justify-center items-center "
+                                                    style="color: aliceblue;">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="worth flex justify-around mt-[50px]">
+                                            <div>
+                                                <p>Toplanan: <span class="predictValue">790₼</span></p>
+                                            </div>
+                                            <div>
+                                                <p>Məqsəd: <span class="maxValue">10000₼</span></p>
                                             </div>
                                         </div>
                                     </div>
@@ -334,10 +422,10 @@
 
                                         <div class="worth flex justify-around mt-[50px]">
                                             <div>
-                                                <p>Toplanan: <span class="predictValue">7.000₼</span></p>
+                                                <p>Toplanan: <span class="predictValue">790₼</span></p>
                                             </div>
                                             <div>
-                                                <p>Məqsəd: <span class="maxValue">10.000₼</span></p>
+                                                <p>Məqsəd: <span class="maxValue">10000₼</span></p>
                                             </div>
                                         </div>
                                     </div>
@@ -375,92 +463,10 @@
 
                                         <div class="worth flex justify-around mt-[50px]">
                                             <div>
-                                                <p>Toplanan: <span class="predictValue">7.000₼</span></p>
+                                                <p>Toplanan: <span class="predictValue">790₼</span></p>
                                             </div>
                                             <div>
-                                                <p>Məqsəd: <span class="maxValue">10.000₼</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="donation">
-                                        <button class="w-[322px] h-[60px]">İANE ET</button>
-                                    </div>
-                                </div>
-                                <div
-                                    class="card swiper-slide max-w-sm w-[370px] bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
-                                    <div class="flex flex-col justify-center items-center">
-                                        <a href="#">
-                                            <img class="" src="assets/img/young-man-supporting-needy-individuals 1.png"
-                                                alt="" />
-                                        </a>
-                                        <div class="p-5">
-                                            <a href="#">
-                                                <h5
-                                                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                                    Lorem Ipsum is simply dummy text</h5>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="cardInfo">
-                                        <div class="flex justify-center">
-                                            <div class="progress">
-                                                <div class="progressBar">
-
-                                                </div>
-                                                <div class="progressRange flex justify-center items-center "
-                                                    style="color: aliceblue;">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="worth flex justify-around mt-[50px]">
-                                            <div>
-                                                <p>Toplanan: <span class="predictValue">7.000₼</span></p>
-                                            </div>
-                                            <div>
-                                                <p>Məqsəd: <span class="maxValue">10.000₼</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="donation">
-                                        <button class="w-[322px] h-[60px]">İANE ET</button>
-                                    </div>
-                                </div>
-                                <div
-                                    class="card swiper-slide max-w-sm w-[370px] bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
-                                    <div class="flex flex-col justify-center items-center">
-                                        <a href="#">
-                                            <img class="" src="assets/img/young-man-supporting-needy-individuals 1.png"
-                                                alt="" />
-                                        </a>
-                                        <div class="p-5">
-                                            <a href="#">
-                                                <h5
-                                                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                                    Lorem Ipsum is simply dummy text</h5>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="cardInfo">
-                                        <div class="flex justify-center">
-                                            <div class="progress">
-                                                <div class="progressBar">
-
-                                                </div>
-                                                <div class="progressRange flex justify-center items-center "
-                                                    style="color: aliceblue;">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="worth flex justify-around mt-[50px]">
-                                            <div>
-                                                <p>Toplanan: <span class="predictValue">7.000₼</span></p>
-                                            </div>
-                                            <div>
-                                                <p>Məqsəd: <span class="maxValue">10.000₼</span></p>
+                                                <p>Məqsəd: <span class="maxValue">10000₼</span></p>
                                             </div>
                                         </div>
                                     </div>
@@ -471,7 +477,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slideButton flex justify-end m-7">
+                        <div data-aos-duration="1300" data-aos="fade-left" class=" slideButton flex justify-end m-7">
                             <button class="swiper-button-prevv mr-7" data-carousel-prev><i
                                     style="transform: rotate(3.142rad);" class="fa-solid fa-arrow-right"></i></button>
                             <button class="swiper-button-nextt" id="slider-button-right" data-carousel-next><i
@@ -482,9 +488,8 @@
         </section>
 
         <section class="cardSlideTwo">
-            <div class="max-w-screen-xl mx-auto responsive mt-[80px] flex justify-center items-center"
-                style="margin-bottom: 200px;">
-                <div>
+            <div class="max-w-screen-xl mx-auto responsive mt-[120px] flex justify-center items-center">
+                <div data-aos-duration="1300" data-aos="fade-right">
                     <div class="card max-w-sm bg-white border border-gray-200 shadow">
                         <a href="#" class="flex justify-center">
                             <img class="w-[370px] h-[280px]" src="assets/img/photorealistic-money-with-plant 1.png"
@@ -503,7 +508,7 @@
                         </div>
                     </div>
                 </div>
-                <div>
+                <div data-aos-duration="1300" data-aos="fade-up">
                     <div class="card max-w-sm bg-white border border-gray-200 shadow">
                         <a href="#" class="flex justify-center">
                             <img class="w-[370px] h-[280px]" src="assets/img/katt-yukawa-K0E6E0a0R3A-unsplash 1.png"
@@ -522,7 +527,7 @@
                         </div>
                     </div>
                 </div>
-                <div>
+                <div data-aos-duration="1300" data-aos="fade-left">
                     <div class="card max-w-sm bg-white border border-gray-200 shadow">
                         <a href="#" class="flex justify-center">
                             <img class="w-[370px] h-[280px]"
@@ -660,21 +665,46 @@
 
         <section class="advertising"
             style="background-image: url(assets/img/imgg-5\ 1.png); background-repeat: no-repeat; background-position:left;">
-            <div class="max-w-screen-xl mx-auto p-[70px]">
-                <div class="advertisingImage flex justify-around ">
-                    <img src="assets/img/char-3o 1.png" alt="">
-                    <img src="assets/img/char-4b 1.png" alt="">
-                    <img src="assets/img/charity-llogo-47 1.png" alt="">
-                    <img src="assets/img/char02 1.png" alt="">
-                    <img src="assets/img/char-4 1.png" alt="">
+            <div data-aos-duration="1300" data-aos="fade-up" class=" max-w-screen-xl mx-auto p-[70px]">
+                <div class="autoplay advertisingImage flex justify-around ">
+                    <div>
+                        <img src="assets/img/char-3o 1.png" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/img/char-4b 1.png" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/img/charity-llogo-47 1.png" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/img/char02 1.png" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/img/char-4 1.png" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/img/char-3o 1.png" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/img/char-4b 1.png" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/img/charity-llogo-47 1.png" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/img/char02 1.png" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/img/char-4 1.png" alt="">
+                    </div>
                 </div>
 
             </div>
             <div class=" p-[40px]" style="background-color: #F4F5FA;">
                 <div class="subscribe max-w-screen-xl mx-auto flex justify-between">
-                    <h1>Yeniliklərdən xəbərdar olmaq üçün
+                    <h1 data-aos-duration="1300" data-aos="fade-right">Yeniliklərdən xəbərdar olmaq üçün
                         Abonə OL</h1>
-                    <div class="subscribeSubmit flex">
+                    <div data-aos-duration="1300" data-aos="fade-left" class="subscribeSubmit flex">
                         <input type="text" placeholder="E-mail adresinizi daxil edin"
                             class="block w-[373px] h-[60px] p-4 text-gray-400 border border-gray-300  text-base focus:ring-gray-400 focus:border-gray-100 ">
                         <a href=""><button class="w-[230px] h-[60px]">ABUNƏ OL</button></a>
@@ -687,7 +717,7 @@
     <footer class="pt-10" style="background-color: #252525;">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 ">
             <div class="logo flex justify-between">
-                <div class="mb-6 md:mb-0">
+                <div data-aos-duration="1300" data-aos="fade-right" class="mb-6 md:mb-0">
                     <a href="index.html" class="flex items-center">
                         <img src="assets/img/amal-01 1.png" class="pt-[15px] pb-15px" alt="Flowbite Logo" />
                     </a>
@@ -697,7 +727,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="flex justify-between">
+                <div data-aos-duration="1300" data-aos="fade-up" class="flex justify-between">
                     <ul>
                         <li>
                             <a href="about.html">Haqqımızda</a>
@@ -716,7 +746,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="flex justify-between">
+                <div data-aos-duration="1300" data-aos="fade-up" class="flex justify-between">
                     <ul>
                         <li>
                             <a href="report.html">Hesabat</a>
@@ -732,7 +762,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="contact">
+                <div data-aos-duration="1300" data-aos="fade-left" class="contact">
                     <ul>
                         <li>
                             <a href=""><i class="fa-solid fa-location-dot"></i> Bakı şəh., Nərimanov ray., 18A</a>
@@ -773,12 +803,15 @@
                     </div>
                 </div>
             </div>
-            <hr class="my-6 border-gray-500 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <div style="text-align: center;" class="sm:flex sm:items-center sm:justify-center">
-                <span class="text-sm text-gray-400 sm:text-center dark:text-gray-400">© 2023 <a
-                        href="https://flowbite.com/" class="hover:underline">Bütün hüquqlar qorunur.</a>
-                </span>
+            <div>
+                <hr class="my-6 border-gray-500 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                <div style="text-align: center;" class="sm:flex sm:items-center sm:justify-center">
+                    <span class="text-sm text-gray-400 sm:text-center dark:text-gray-400">© 2023 <a
+                            href="https://flowbite.com/" class="hover:underline">Bütün hüquqlar qorunur.</a>
+                    </span>
+                </div>
             </div>
+
         </div>
     </footer>
 
@@ -786,6 +819,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="assets/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>

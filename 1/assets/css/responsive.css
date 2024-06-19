@@ -204,19 +204,19 @@
         text-align: center;
     }
 
-    .teamCard {
+    /* .teamCard {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
+    } */
 
-    .advertising .advertisingImage {
+    /* .advertising .advertisingImage {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
+    } */
 
     .subscribe {
         display: flex;

@@ -10,6 +10,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/slick/slick.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="assets/css/gallery.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -20,10 +23,12 @@
 <body>
 
     <header>
-        <nav class=" border-gray-200 dark:bg-gray-900">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="assets/img/amal-1 1.png" class="pt-[15px] pb-15px" alt="Flowbite Logo" />
+        <nav class="border-gray-200 dark:bg-gray-900 p-4">
+            <div class="head max-w-screen-xl  flex flex-wrap items-center justify-between mx-auto ">
+                <a data-aos-duration="1300" data-aos="fade-right" href="index.html"
+                    class="flex items-center rtl:space-x-reverse">
+                    <img src="assets/img/amal-1 1.png" class="pt-[15px] pb-15px w-[264px] h-[120px]"
+                        alt="Flowbite Logo" />
                 </a>
                 <button data-collapse-toggle="navbar-default" type="button"
                     class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -35,33 +40,24 @@
                             d="M1 1h15M1 7h15M1 13h15" />
                     </svg>
                 </button>
+                <div data-aos-duration="1300" data-aos="fade-left" class="hidden md:block form flex justify-around p-5">
+                    <a href="donation.html"><button type="button" class="text-white">İANƏ ET</button></a>
+                    <a href="voluntary.html"><button type="button" class="buttonNthOne text-white">KÖNÜLLÜ
+                            OL</button></a>
+                </div>
 
-                <div class="resp hidden w-full md:block md:w-auto"  id="navbar-default">
-                    <div class="form flex justify-between p-5">
-                        <div class="input-box ">
-                            <input type="text" class=" form-control" placeholder="Axtar">
-                            <i class="fa fa-search"></i>
-                        </div>
+                <div data-aos-duration="1300" data-aos="fade-left" class="resp hidden w-full md:block "
+                    id="navbar-default ">
+                    <div class="hidden form flex justify-around p-5">
                         <a href="donation.html"><button type="button" class="text-white">İANƏ ET</button></a>
-                        <a href="voluntary.html"><button type="button" class="buttonNthOne text-white">KÖNÜLLÜ
+                        <a href="voluntary.html"><button type="button" class="buttonNthOne text-white mt-3">KÖNÜLLÜ
                                 OL</button></a>
                     </div>
-                    <div class="relative mt-3 md:hidden">
-                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                            </svg>
-                        </div>
-                        <input type="text" id="search-navbar"
-                            class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="Search...">
-                    </div>
-                    <ul class="font-medium justify-around flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <ul
+                        class="font-medium justify-around flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                         <li>
                             <a href="about.html"
-                                class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent active">Haqqımızda</a>
+                                class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent ">Haqqımızda</a>
                         </li>
                         <li>
                             <a href="project.html"
@@ -123,50 +119,119 @@
         <section class="bannerGallery flex justify-center items-center"
             style="background-image: url(assets/img/larm-rmah-AEaTUnvneik-unsplash\ 1.png); width: 100%; height: 450px; background-position: center; background-repeat: no-repeat; background-size: cover;">
             <div>
-                <h1>
+                <h1 data-aos-duration="1300" data-aos="fade-down">
                     GALEREYA
                 </h1>
                 <div class="title flex items-center text-center">
-                    <a href="index.html">Ana səhifə</a>
-                    <i class="fa-solid fa-arrow-right"></i>
-                    <a href="">GALEREYA</a>
+                    <a data-aos-duration="1300" data-aos="fade-right" href="index.html">Ana səhifə</a>
+                    <i data-aos-duration="1300" data-aos="fade-up" class="fa-solid fa-arrow-right"></i>
+                    <a data-aos-duration="1300" data-aos="fade-left" href="">GALEREYA</a>
                 </div>
             </div>
         </section>
 
         <section class="gallery">
             <div class="max-w-screen-xl mx-auto">
-                <div class="image flex justify-around mt-[80px]" >
-                    <img src="assets/img/ismael-paramo-tnVdQGmWtb0-unsplash 2.png" style="width: 700px; height: 500px;" alt="">
-                    <img src="assets/img/joel-muniz-y3ZY6qFln_g-unsplash 2.png"  style="width: 440px; height: 500px;" alt="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="image flex justify-around mt-[80px]">
+                    <button data-modal-target="default-modal" data-modal-toggle="default-modal" type="button">
+                        <img  data-aos-duration="1300" data-aos="fade-right"
+                            src="assets/img/ismael-paramo-tnVdQGmWtb0-unsplash 2.png"
+                            style="width: 700px; height: 500px;" alt="">
+                    </button>
+                    <button data-modal-target="default-modalTwo" data-modal-toggle="default-modalTwo" type="button">
+                        <img  data-aos-duration="1300" data-aos="fade-left"
+                            src="assets/img/joel-muniz-y3ZY6qFln_g-unsplash 2.png" style="width: 440px; height: 500px;"
+                            alt="">
+                    </button>
                 </div>
-                <div class="image flex justify-around mt-[30px]" >
-                    <img src="assets/img/joel-muniz-qvzjG2pF4bE-unsplash 1.png" style="width: 500px; height: 500px;" alt="">
-                    <img src="assets/img/joel-muniz-BErJJL_KsjA-unsplash 3.png" style="width: 640px; height: 500px;" alt="">
+                <div class="image flex justify-around mt-[30px]">
+                    <button data-modal-target="default-modalThree" data-modal-toggle="default-modalThree" type="button">
+                        <img  data-aos-duration="1300" data-aos="fade-right"
+                            src="assets/img/joel-muniz-qvzjG2pF4bE-unsplash 1.png" style="width: 500px; height: 500px;"
+                            alt="">
+                    </button>
+                    <button data-modal-target="default-modalFoor" data-modal-toggle="default-modalFoor" type="button">
+                        <img  data-aos-duration="1300" data-aos="fade-left"
+                            src="assets/img/joel-muniz-BErJJL_KsjA-unsplash 3.png" style="width: 640px; height: 500px;"
+                            alt="">
+                    </button>
                 </div>
-                <div class="image flex justify-center mt-[30px]" >
-                    <img src="assets/img/young-man-supporting-needy-individuals 1.png" style="width: 1170px; height: 348px; " alt="">
+                <div class="image flex justify-center mt-[30px]">
+                    <button data-modal-target="default-modalFive" data-modal-toggle="default-modalFive" type="button">
+                        <img  data-aos-duration="1300" data-aos="fade-up"
+                            src="assets/img/young-man-supporting-needy-individuals 1.png"
+                            style="width: 1170px; height: 348px; " alt="">
+                    </button>
+
                 </div>
             </div>
         </section>
 
-        <section class="advertising" style="background-image: url(assets/img/imgg-5\ 1.png); background-repeat: no-repeat; background-position:left;">
-            <div class="max-w-screen-xl mx-auto p-[70px]">
-                <div class="advertisingImage flex justify-around ">
-                    <img src="assets/img/char-3o 1.png" alt="">
-                    <img src="assets/img/char-4b 1.png" alt="">
-                    <img src="assets/img/charity-llogo-47 1.png" alt="">
-                    <img src="assets/img/char02 1.png" alt="">
-                    <img src="assets/img/char-4 1.png" alt="">
+        <section class="advertising"
+            style="background-image: url(assets/img/imgg-5\ 1.png); background-repeat: no-repeat; background-position:left;">
+            <div data-aos-duration="1300" data-aos="fade-up" class=" max-w-screen-xl mx-auto p-[70px]">
+                <div class="autoplay advertisingImage flex justify-around ">
+                    <div>
+                        <img src="assets/img/char-3o 1.png" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/img/char-4b 1.png" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/img/charity-llogo-47 1.png" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/img/char02 1.png" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/img/char-4 1.png" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/img/char-3o 1.png" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/img/char-4b 1.png" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/img/charity-llogo-47 1.png" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/img/char02 1.png" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/img/char-4 1.png" alt="">
+                    </div>
                 </div>
 
             </div>
             <div class=" p-[40px]" style="background-color: #F4F5FA;">
                 <div class="subscribe max-w-screen-xl mx-auto flex justify-between">
-                    <h1>Yeniliklərdən xəbərdar olmaq üçün
+                    <h1 data-aos-duration="1300" data-aos="fade-right">Yeniliklərdən xəbərdar olmaq üçün
                         Abonə OL</h1>
-                    <div class="subscribeSubmit flex">
-                        <input type="text" placeholder="E-mail adresinizi daxil edin" class="block w-[373px] h-[60px] p-4 text-gray-400 border border-gray-300  text-base focus:ring-gray-400 focus:border-gray-100 ">
+                    <div data-aos-duration="1300" data-aos="fade-left" class="subscribeSubmit flex">
+                        <input type="text" placeholder="E-mail adresinizi daxil edin"
+                            class="block w-[373px] h-[60px] p-4 text-gray-400 border border-gray-300  text-base focus:ring-gray-400 focus:border-gray-100 ">
                         <a href=""><button class="w-[230px] h-[60px]">ABUNƏ OL</button></a>
                     </div>
                 </div>
@@ -177,17 +242,17 @@
     <footer class="pt-10" style="background-color: #252525;">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 ">
             <div class="logo flex justify-between">
-                <div class="mb-6 md:mb-0">
+                <div data-aos-duration="1300" data-aos="fade-right" class="mb-6 md:mb-0">
                     <a href="index.html" class="flex items-center">
                         <img src="assets/img/amal-01 1.png" class="pt-[15px] pb-15px" alt="Flowbite Logo" />
                     </a>
                     <div class="mt-7">
                         <a href="donation.html">
-                        <button>İANƏ ET</button>
+                            <button>İANƏ ET</button>
                         </a>
                     </div>
                 </div>
-                <div class="flex justify-between">
+                <div data-aos-duration="1300" data-aos="fade-up" class="flex justify-between">
                     <ul>
                         <li>
                             <a href="about.html">Haqqımızda</a>
@@ -206,7 +271,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="flex justify-between">
+                <div data-aos-duration="1300" data-aos="fade-up" class="flex justify-between">
                     <ul>
                         <li>
                             <a href="report.html">Hesabat</a>
@@ -222,7 +287,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="contact">
+                <div data-aos-duration="1300" data-aos="fade-left" class="contact">
                     <ul>
                         <li>
                             <a href=""><i class="fa-solid fa-location-dot"></i> Bakı şəh., Nərimanov ray., 18A</a>
@@ -236,7 +301,7 @@
                     </ul>
                     <div class="social flex mt-4">
                         <a href="">
-                            <div class="flex justify-center items-center"> 
+                            <div class="flex justify-center items-center">
                                 <i class="fa-brands fa-facebook-f"></i>
                             </div>
                         </a>
@@ -263,18 +328,67 @@
                     </div>
                 </div>
             </div>
-            <hr class="my-6 border-gray-500 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <div class="sm:flex sm:items-center sm:justify-center">
-                <span class="text-sm text-gray-400 sm:text-center dark:text-gray-400">© 2023 <a
-                        href="https://flowbite.com/" class="hover:underline">Bütün hüquqlar qorunur.</a>
-                </span>
+            <div>
+                <hr class="my-6 border-gray-500 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                <div style="text-align: center;" class="sm:flex sm:items-center sm:justify-center">
+                    <span class="text-sm text-gray-400 sm:text-center dark:text-gray-400">© 2023 <a
+                            href="https://flowbite.com/" class="hover:underline">Bütün hüquqlar qorunur.</a>
+                    </span>
+                </div>
             </div>
+
         </div>
     </footer>
 
+    <div>
+        <div id="default-modalOne" tabindex="-1" aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-2xl max-h-full">
+                <img id="myImg" data-aos-duration="1300" data-aos="fade-right"
+                    src="assets/img/ismael-paramo-tnVdQGmWtb0-unsplash 2.png" style="width: 700px; height: 500px;"
+                    alt="">
+            </div>
+        </div>
+        <div id="default-modalTwo" tabindex="-1" aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-2xl max-h-full">
+                <img id="myImg" data-aos-duration="1300" data-aos="fade-left"
+                    src="assets/img/joel-muniz-y3ZY6qFln_g-unsplash 2.png"  alt="">
+            </div>
+        </div>
+        <div id="default-modalThree" tabindex="-1" aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-2xl max-h-full">
+                <img  data-aos-duration="1300" data-aos="fade-right"
+                src="assets/img/joel-muniz-qvzjG2pF4bE-unsplash 1.png" style="width: 500px; height: 500px;"
+                alt="">
+            </div>
+        </div>
+        <div id="default-modalFoor" tabindex="-1" aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-2xl max-h-full">
+                <img  data-aos-duration="1300" data-aos="fade-left"
+                            src="assets/img/joel-muniz-BErJJL_KsjA-unsplash 3.png" style="width: 640px; height: 500px;"
+                            alt="">
+            </div>
+        </div>
+        <div id="default-modalFive" tabindex="-1" aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-2xl max-h-full">
+                <img  data-aos-duration="1300" data-aos="fade-up"
+                            src="assets/img/young-man-supporting-needy-individuals 1.png"
+                            style="width: 1170px; height: 348px; " alt="">
+            </div>
+        </div>
+    </div>
+
+
+
     <script src="./assets/js/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
